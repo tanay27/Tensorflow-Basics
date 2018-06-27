@@ -35,7 +35,7 @@ from object_detection.utils import ops as utils_ops
 # In[5]:
 
 # This is needed to display the images.
-get_ipython().magic('matplotlib inline')
+#get_ipython().magic('matplotlib inline')
 
 
 # ## Object detection imports
@@ -188,7 +188,7 @@ while True:
       # result image with boxes and labels on it.
     
       # Expand dimensions since the model expects images to have shape: [1, None, None, 3]
-    image_np_expanded = np.expand_dims(image_np, axis=0)
+    #image_np_expanded = np.expand_dims(image_np, axis=0)
       # Actual detection.
     output_dict = run_inference_for_single_image(image_np, detection_graph)
       # Visualization of the results of a detection.
